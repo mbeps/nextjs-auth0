@@ -1,38 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a simple project demonstrating the use of Auth0 with Next.JS. It's primarily designed for testing and understanding the integration of these two powerful tools. This project helps in exploring how to handle user authentication in a Next.js application using Auth0. We've chosen to use the traditional `pages` directory of Next.JS as the newer `app` directory is currently not supported.
 
-## Getting Started
+The core features of this sample project include user sign-in, sign-up, sign-out, as well as sign-in using third-party providers.
 
-First, run the development server:
+# **Requirements**
+These are the requirements needed to run the project:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+- Node 18 LTS
+- Next.JS 12
+- Auth0 account
+
+# **Features**
+
+Here are the main features you can explore with this sample:
+
+- Users can sign in using email and password
+- Users can sign up for a new account
+- Users can sign in using third-party authentication providers
+- Users can sign out
+
+# **Stack**
+
+The main technologies used in this project are:
+
+- [**Next.js**](https://nextjs.org/): Next.js is a popular React framework for building server-side rendered (SSR) and statically generated web applications. 
+
+- [**Auth0**](https://auth0.com/): Auth0 is a flexible, drop-in solution to add authentication and authorization services to your applications. It provides a universal authentication & authorization platform for web, mobile, and legacy applications.
+
+# **Running Application Locally**
+
+Follow these steps to run the application locally. 
+
+## **1. Clone the Project Locally**
+```sh
+git clone https://github.com/your-github-username/auth0-nextjs-sample.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## **2. Set Up Environment**
+1. Copy the `.env.example` file and rename it to `.env.local`
+2. Populate the `.env.local` with the required Auth0 secrets. You will need to create an Auth0 application to get these credentials. If you are unsure of how to do this, follow the [Auth0 Application Setup Guide](https://auth0.com/docs/get-started/create-applications).
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## **3. Install Dependencies**
+Navigate to your project directory and run the following command to install the necessary dependencies:
+```sh
+yarn install
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## **4. Run Project**
+Finally, you can run the project using this command:
+```sh
+yarn dev
+```
+The application should now be running at `http://localhost:3000`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+# **Note**
+This project uses the traditional `pages` directory structure of Next.JS and not the newer `app` directory as the latter is currently not supported with this particular setup.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Enjoy exploring Auth0 with Next.JS!
